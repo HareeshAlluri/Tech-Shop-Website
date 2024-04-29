@@ -5,7 +5,7 @@
     font-family: sans-serif;
 }
 .mainCarouseldiv{
-    background-color: rgba(0, 0, 0, 0.781);
+    background-color: rgba(0, 0, 0, 0.877);
     height: 700px;
     width: 100%;
     position: relative;
@@ -30,7 +30,7 @@
     float: right;
     height: 700px;
     margin-right: 200px;
-    mix-blend-mode: difference;
+    
 
 }
 .mainCarouselText{

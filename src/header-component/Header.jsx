@@ -13,7 +13,7 @@ function Header() {
         <Link to="/" ><h2 className="title">Tech-Shop</h2></Link>
         <ul className='headerIcons'>
         <li><FontAwesomeIcon icon={faMagnifyingGlass} /></li>
-        <Link to="/cart"><li><FontAwesomeIcon icon={faCartShopping} /></li></Link>
+        <Link to="/cart" className='cart'><li><FontAwesomeIcon icon={faCartShopping} /></li></Link>
         <li><FontAwesomeIcon icon={faUser} /></li>
         </ul> 
 

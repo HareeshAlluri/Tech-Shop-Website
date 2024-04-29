@@ -2,11 +2,13 @@ import React from 'react'
 
 
 
+
+
 function Cart() {
   return (
-    <div>
+      <div>
      <h1>Heloo world</h1>
-    </div>
+      </div>
   )
 }
 

@@ -1,15 +1,13 @@
 import React from 'react'
-  import firstImage from "../Boat-Assets/products/boat518-1.png";
+  // import firstImage from "../Boat-Assets/products/boat518-1.png";
 
-function FeaturedLayout({value}) {
+function FeaturedLayout() {
   return (
     <div>
-        <h4>{}</h4>
+        {/* <h4>{}</h4>
         <img src={firstImage} alt='carouselimage'/>
-        <h3>{} <strike>{}</strike></h3>
-
-
-
+        <h3>{} <strike>{}</strike></h3> */}
+ 
     </div>
   )
 }
