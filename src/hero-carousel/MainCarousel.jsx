@@ -1,11 +1,14 @@
 import Carousel from 'react-bootstrap/Carousel';
 import React from 'react';
 import "./MainCarousel.css";
-import firstImage from "../Boat-Assets/products/jbl660nc-1.png";
-import secondImage from "../Boat-Assets/products/boat131-3.png";
-import thirdImage from "../Boat-Assets/products/sonyXb910n-1.png";
 
-function MainCarousel() {
+// import firstImage from "../images/products/jbl660nc-1.png"
+// import secondImage from "../images/products/boat131-3.png"
+// import thirdImage from "../images/products/sonyXb910n-1.png"
+
+
+function MainCarousel(){
+  
   return (
     <div className='mainCarouseldiv'>
      
@@ -15,10 +18,10 @@ function MainCarousel() {
       
         <img
           className="CarouselImg"
-          src={firstImage}
+          src='/images/products/jbl660nc-1.png'
           alt="First slide"
         />
-        <h2 >OVER EAR</h2>
+        <h2>OVER EAR</h2>
          
         <div className='mainCarouselText'>
         
@@ -35,7 +38,7 @@ function MainCarousel() {
       <Carousel.Item>
         <img
           className="CarouselImg"
-          src={secondImage}
+          src='/images/products/boat131-3.png'
           alt="Second slide"
         />
         <h2 >IN EAR</h2>
@@ -55,7 +58,7 @@ function MainCarousel() {
       <Carousel.Item>
         <img
           className="CarouselImg"
-          src={thirdImage}
+          src='/images/products/sonyXb910n-1.png'
           alt="Third slide"
         />
                 <h2 >OVER EAR</h2>
@@ -81,3 +84,4 @@ function MainCarousel() {
 }
 
 export default MainCarousel;
+
