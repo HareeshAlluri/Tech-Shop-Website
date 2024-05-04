@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons"
 import TopProductsLayout from './TopProductsLayout';
 
-function TopProducts() {
+function TopProducts({handleClick}) {
   const [products, updatedProducts]=useState(productsData);
   const [filterProducts, updatedFilterProducts]= useState([]);
 
@@ -47,7 +47,7 @@ function TopProducts() {
       </div>
       <div className='flexGallery'>
         {(filterProducts.length > 0 ? filterProducts : products).slice(0, 11).map(item => (
-          <TopProductsLayout key={item.id} item={item}/>
+          <TopProductsLayout key={item.id} item={item} handleClick={handleClick} />
         ))}
   
         <div className='browsealllayoutcard'>

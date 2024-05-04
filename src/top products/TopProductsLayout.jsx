@@ -5,7 +5,7 @@ import "./TopProducts.css"
 
 
 
-function TopProductsLayout({item}) {
+function TopProductsLayout({item, handleClick }) {
   const {images, title, info, finalPrice,originalPrice, rateCount }=item
   return (
     <>
@@ -21,11 +21,11 @@ function TopProductsLayout({item}) {
           </span>
           <h5 >{title}</h5>
           <p >{info}</p>
-         
+         <hr />
           <h3>
             ₹{finalPrice} <strike> ₹{originalPrice}</strike>
           </h3>
-          <button>Add to cart</button>
+          <button onClick={()=>handleClick(item)}>Add to cart</button>
         </div>
 
       </div>

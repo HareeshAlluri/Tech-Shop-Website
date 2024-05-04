@@ -5,7 +5,7 @@ import "./Header.css";
 import { Link } from 'react-router-dom';
 
 
-function Header() {
+function Header({size}) {
   return (
     <>
     <header >
@@ -13,9 +13,11 @@ function Header() {
         <Link to="/" ><h2 className="title">Tech-Shop</h2></Link>
         <ul className='headerIcons'>
         <li><FontAwesomeIcon icon={faMagnifyingGlass} /></li>
-        <Link to="/cart" className='cart'><li><FontAwesomeIcon icon={faCartShopping} /></li></Link>
+        <Link to="/cart" className='cart'><li><FontAwesomeIcon icon={faCartShopping} /><span className='count'>{size}</span></li></Link>
         <li><FontAwesomeIcon icon={faUser} /></li>
+
         </ul> 
+        
 
     </header>
       

@@ -13,6 +13,7 @@ a{
 }
 .cart{
     color: white;
+    position: relative;
 }
 header{
     height: 80px;
@@ -35,4 +36,11 @@ header{
    font-size: x-large;
    margin-right: 50px;
    /* cursor: pointer; */
+}
+.count{
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: small;
+    position: absolute;   
 }
